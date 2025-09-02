@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acry DSE Notes Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">
+                <span class="glow-text">Acry DSE Notes Hub</span>
+            </h1>
+            <p class="header__subtitle">
+                學霸養成計劃 | 吊打全港學生專用筆記庫 💀
+            </p>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+        <div class="container">
+            <div class="tabs-wrapper">
+                <button class="tab-btn active" data-category="chinese">
+                    <span class="tab-text">中文</span>
+                    <div class="tab-glow"></div>
+                </button>
+                <button class="tab-btn" data-category="english">
+                    <span class="tab-text">英文</span>
+                    <div class="tab-glow"></div>
+                </button>
+                <button class="tab-btn" data-category="econ">
+                    <span class="tab-text">Econ</span>
+                    <div class="tab-glow"></div>
+                </button>
+                <button class="tab-btn" data-category="chinese_history">
+                    <span class="tab-text">中史</span>
+                    <div class="tab-glow"></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="搜尋筆記..." id="search-input">
+                    <div class="search-icon">🔍</div>
+                </div>
+            </div>
+
+            <!-- Notes Container -->
+            <div class="notes-grid" id="notes-container">
+                <!-- Notes will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Copy Success Modal -->
+    <div class="copy-modal hidden" id="copy-modal">
+        <div class="copy-modal__content">
+            <div class="copy-modal__icon">✓</div>
+            <div class="copy-modal__text">已複製到剪貼板</div>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loading-overlay hidden" id="loading">
+        <div class="cyber-loader">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
