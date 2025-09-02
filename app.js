@@ -26,6 +26,12 @@ const notesData = {
             name: "英文",
             notes: [
                 {
+                    id: "Vocab/ phases",
+                    title: "useful in writing",
+                    content: "- As clear as mud = very unclear \n- A gloomy(暗淡）/rosy(光明）outlook/prospect \n- Provide food for thought 發人深省\n- venerate/revere =greatly admire\n- my alma mater 母校\n- change the trajectory of somebody's life",
+                    tags: ["phases", "vocab", "DSE English"]
+                },
+                {
                     id: "grammar_hacks",
                     title: "Grammar Hacks",
                     content: "Present Perfect vs Past Simple rules and exceptions:\n- Present Perfect: actions with present relevance\n- Past Simple: completed actions in the past\n- Key words: already, just, yet, since, for",
